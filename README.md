@@ -6,12 +6,8 @@
 # Imagem Digital 
 composta por uma matriz, onde cada elemento da matriz em uma imagem é denominado pixel, que por sua vez, descreve, de alguma forma apropriada, uma cor para aquele ponto da imagem. Por serem pequenos e próximos uns dos outros, dificilmente são percebidos a olho nu. Assim, quanto maior o número de pixels, ou seja, quanto maior a matriz que forma a imagem, melhor é a sua resolução espacial, o que permite uma melhor diferenciação espacial entre as estruturas, ou seja mais nítidas são as imagens produzidas. O formato do pixel mais comum usado em imagens é o RGB (Red (vermelho), Green (verde) e Blue (azul)). A combinação destas cores deve possibilitar a geração quaisquer outras cores. 
  
-# Vídeos
-O vídeo digital é composto por uma série de imagens exibidas em rápida sucessão constante com frequências comuns de 15, 24, 30 e 60 quadros(frames) por segundo (FPS); quanto mais quadros tiver, mais detalhes do movimento serão capturados ou exibidos. Cada imagem ou quadro inclui uma varredura de pixels com largura e altura expressas em número de pixels, conhecido como resolução. Quanto maior a resolução do vídeo capturado, maior sua clareza e qualidade. 
-Além disso, um vídeo pode ser uma animação, criada por imagens em sequência tendo uma ideia de movimento das cenas, uma gravação feita por imagens.
-
 # Código Chroma key para Imagens (feito em Julia)
-Em primeiro momento, carregamos a imagem ou vídeo, que possui o fundo ou o elemento verde a ser removido ou transformado, para dentro do programa. 
+Em primeiro momento, carregamos a imagem, que possui o fundo ou o elemento verde a ser removido ou transformado, para dentro do programa. 
 
 
 
@@ -53,3 +49,20 @@ Por fim, temos as imagens transformadas pelo chroma key:
 ![telefonetransformado](https://user-images.githubusercontent.com/109240286/179125961-7c74a66e-d7ea-4b97-b59e-261e463fe6a6.png)
 ![telefoneeditadotrsnformado](https://user-images.githubusercontent.com/109240286/179125958-abeaae33-b77d-4f01-b420-536b78213d7e.png)
 <div><img src="https://user-images.githubusercontent.com/109240286/179125944-35c6eb48-4908-48c4-82e2-4c3cb46909ec.png" width="615px" /></div>
+
+
+# Vídeos
+O vídeo digital é composto por uma série de imagens exibidas em rápida sucessão constante com frequências comuns de 15, 24, 30 e 60 quadros(frames) por segundo (FPS); quanto mais quadros tiver, mais detalhes do movimento serão capturados ou exibidos. Cada imagem ou quadro inclui uma varredura de pixels com largura e altura expressas em número de pixels, conhecido como resolução. Quanto maior a resolução do vídeo capturado, maior sua clareza e qualidade. 
+Além disso, um vídeo pode ser uma animação, criada por imagens em sequência tendo uma ideia de movimento das cenas, uma gravação feita por imagens.
+
+# Código de Chroma key para video
+Para este código utilizaremos as mesmas funções do código de chroma key para imagens. Em primeiro momento, carregamos o video para dentro do nosso programa e definimos um tamanho padrão para as imagens que serão trabalhadas dentro do código como exige a linguegem julia. Em seguida, carregamos nosso plano de fundo para dentro do programa já convertendo suas dimensões para a padrão e transformando-o em uma matriz de pixels através do espaço de cor RGB. 
+
+Com isso, quebramos o video em seus vários quadros(frames), e para imagem que compôem o video, a convertemos para o tamanho padrão estabelecido e a trasnformamos através da função changebg do código de chroma key para imagens. 
+
+Por fim, para sermos capazes de criar uma animação utilizando as imagens transformadas, criamos vários objetos do tipo Plots a partir das imagens transformadas e atravéz dessa biblioteca juntamos estes objetos em um gif de 30 frames por segundo. 
+
+
+
+# Os iefeitos de diferentes tipos de entrada
+
