@@ -62,7 +62,10 @@ Com isso, quebramos o video em seus vários quadros(frames), e para imagem que c
 
 Por fim, para sermos capazes de criar uma animação utilizando as imagens transformadas, criamos vários objetos do tipo Plots a partir das imagens transformadas e atravéz dessa biblioteca juntamos estes objetos em um gif de 30 frames por segundo. 
 
+Exemplo:
 
+
+![paulosemcabecagif](https://user-images.githubusercontent.com/109240286/179131457-87932cd4-f4ba-4e1c-8d6c-a2c21cf792d1.gif)
 
 # Os iefeitos de diferentes tipos de entrada
 
