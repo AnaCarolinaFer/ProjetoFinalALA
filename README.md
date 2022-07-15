@@ -81,6 +81,7 @@ Nos experimentos do código aplicado a videos contendo os sacos de lixo, é perc
 Da mesma forma, o próprio saco, por não ser uma superficie plana, possui pontos de sombra, que não são identificados pelo programa como verde por serem mais p´roximos do preto. No caso do video acima, o saco não foi transformado por inteiro em alguns momentos do video.
 
 - Parede verde
+- 
 ![bts](https://user-images.githubusercontent.com/109240286/179273957-7899fa7b-cca2-41a5-84f5-94427d2c4f7b.gif)
 
 Em superficies lisas a execução do programa torna-se visivelmente mais limpa. 
