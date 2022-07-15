@@ -76,11 +76,9 @@ Exemplo:
 
 Nos experimentos do código aplicado a videos contendo os sacos de lixo, é perceptível como a luz refletida pelos sacos nos objetos e superficies a sua volta faz com que o programa identifique-os como espaços verdes a serem transfomados. No caso do video com a lava, apesar dos sacos estarem somente no chão, o programa transformou pedaços da parede e dos movéis em lava também. 
 
-![paulosemcabeca](https://user-images.githubusercontent.com/109240286/179271358-9ae76593-8753-414a-9b02-5879a18f1ff4.gif)
+![hp](https://user-images.githubusercontent.com/109240286/179272927-94e4eb09-3be9-43d2-a43d-fc72f5ce7fb5.gif)
 
 Da mesma forma, o próprio saco, por não ser uma superficie plana, possui pontos de sombra, que não são identificados pelo programa como verde por serem mais p´roximos do preto. No caso do video acima, o saco não foi transformado por inteiro em alguns momentos do video.
-
-![hp](https://user-images.githubusercontent.com/109240286/179272927-94e4eb09-3be9-43d2-a43d-fc72f5ce7fb5.gif)
 
 - Parede verde
 ![bts](https://user-images.githubusercontent.com/109240286/179273957-7899fa7b-cca2-41a5-84f5-94427d2c4f7b.gif)
