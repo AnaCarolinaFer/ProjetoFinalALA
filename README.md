@@ -25,6 +25,7 @@ Por conseguinte, carregamos a imagem, denominada plano de fundo, que irá substi
 
 Finalmente, somamos os produtos entre a máscara binária produzida e a própria imagem e entre a máscara inversa e o plano de fundo, fazendo com que onde na matriz que representa a imagem trabalhada sem os espaços verdes estava armazenado o valor 0, obtenha o valor do pixel do plano de fundo na posição análoga, e vice-versa. Portanto, juntando as duas imagens, de forma que o plano de fundo substitua os espaços da imagem que originalmente eram verdes.
 
+
 # Código de pré-processamento de imagem (feito em python)
 A falta de nitidez de uma imagem faz com que as divisas entres duas cores não sejam tão demarcadas, fazendo com que os pixels da fronteira tenham uma cor intermediária entre as duas, “se misturem”. Dessa forma, o programa acaba tendo dificuldade em determinar se os pixels da fronteira são verdes ou não, podendo eliminar partes da imagem durante a criação da máscara binária, que deveriam ser aproveitadas ou até mesmo incluir espaços da imagem que deveriam ser transformadas pelo chroma key. Por isso que para a utilização do chroma key, a etapa de processamento da imagem trabalhada é igualmente relevante. 
 
@@ -43,6 +44,7 @@ Assim, escolhendo um plano de fundo qualquer, temos a criação das respectivas 
 
 ![telefoneinvertido](https://user-images.githubusercontent.com/109240286/179125631-030efff7-ad85-44cd-aa99-c02c12ab1639.png)
 ![telefoneeditadoinvertido](https://user-images.githubusercontent.com/109240286/179125628-9e415f5d-c02e-452d-b34b-be231dda34b1.png)
+![telefoneprocessadoinvertido](https://user-images.githubusercontent.com/109240286/179126112-75c8256f-bb8e-401e-9e80-d3650770407c.png)
 
 Aqui, o impacto da diferença da qualidade das imagens torna-se clara.
 
