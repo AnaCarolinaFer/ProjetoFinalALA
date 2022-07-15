@@ -32,7 +32,7 @@ A falta de nitidez de uma imagem faz com que as divisas entres duas cores não s
 Assim, um simples código de pré-processamento de imagem, capaz de alterar o constraste, a saturação e o brilho da imagem. ja contribuiria para uma melhora consideravel da nitidez da imagem. Em primeiro momento, carregamos a imegem a ser editada para dentro do programa e atravéz da biblioteca ImageEnhance, modficamos cada um dos canais da imagem e salvamos a imagem editada.
 
 Exemplo prático:
-Temos uma imagem qualquer de um telefone com fundo verde, a mesma imagem modificada pelo código de processamento de imagem mencionado e novamente a mesma imagem transformada por um processamente de imagem profissional(https://letsenhance.io/boost) e a criação de suas respectivas mascaras binárias:
+Temos uma imagem qualquer de um telefone com fundo verde, a mesma imagem modificada pelo código de processamento de imagem mencionado e novamente a mesma imagem transformada por um processamente de imagem profissional(https://letsenhance.io/boost) e a criação de suas respectivas mascaras binárias pelo código do chroma key:
 
 ![telefonemascara](https://user-images.githubusercontent.com/109240286/179090507-5edf3458-26b8-4502-bdc7-c98e24e0be25.png)
 ![telefoneeditadomascara](https://user-images.githubusercontent.com/109240286/179124273-0d250dc8-df78-4582-a26f-7c79a0485c18.png)
