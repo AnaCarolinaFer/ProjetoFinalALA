@@ -64,8 +64,9 @@ Por fim, para sermos capazes de criar uma animação utilizando as imagens trans
 
 Exemplo:
 
-
+![paulosemcabeca](https://user-images.githubusercontent.com/109240286/179131723-d6ceba99-07e5-44ab-818f-3fad4fdc46b5.gif)
 ![paulosemcabecagif](https://user-images.githubusercontent.com/109240286/179131457-87932cd4-f4ba-4e1c-8d6c-a2c21cf792d1.gif)
 
-# Os iefeitos de diferentes tipos de entrada
+
+# Os efeitos de diferentes tipos de entrada
 
