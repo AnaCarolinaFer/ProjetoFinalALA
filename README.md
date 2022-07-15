@@ -10,7 +10,7 @@ composta por uma matriz, onde cada elemento da matriz em uma imagem é denominad
 O vídeo digital é composto por uma série de imagens exibidas em rápida sucessão constante com frequências comuns de 15, 24, 30 e 60 quadros(frames) por segundo (FPS); quanto mais quadros tiver, mais detalhes do movimento serão capturados ou exibidos. Cada imagem ou quadro inclui uma varredura de pixels com largura e altura expressas em número de pixels, conhecido como resolução. Quanto maior a resolução do vídeo capturado, maior sua clareza e qualidade. 
 Além disso, um vídeo pode ser uma animação, criada por imagens em sequência tendo uma ideia de movimento das cenas, uma gravação feita por imagens.
 
-# Código Chroma key para Imagens
+# Código Chroma key para Imagens (feito em Julia)
 Em primeiro momento, carregamos a imagem ou vídeo, que possui o fundo ou o elemento verde a ser removido ou transformado, para dentro do programa. 
 
 
@@ -25,10 +25,17 @@ Por conseguinte, carregamos a imagem, denominada plano de fundo, que irá substi
 
 Finalmente, somamos os produtos entre a máscara binária produzida e a própria imagem e entre a máscara inversa e o plano de fundo, fazendo com que onde na matriz que representa a imagem trabalhada sem os espaços verdes estava armazenado o valor 0, obtenha o valor do pixel do plano de fundo na posição análoga, e vice-versa. Portanto, juntando as duas imagens, de forma que o plano de fundo substitua os espaços da imagem que originalmente eram verdes.
 
-# Como melhorar o código
+# Código de pré-processamento de imagem (feito em python)
 A falta de nitidez de uma imagem faz com que as divisas entres duas cores não sejam tão demarcadas, fazendo com que os pixels da fronteira tenham uma cor intermediária entre as duas, “se misturem”. Dessa forma, o programa acaba tendo dificuldade em determinar se os pixels da fronteira são verdes ou não, podendo eliminar partes da imagem durante a criação da máscara binária, que deveriam ser aproveitadas ou até mesmo incluir espaços da imagem que deveriam ser transformadas pelo chroma key. Por isso que para a utilização do chroma key, a etapa de processamento da imagem trabalhada é igualmente relevante. 
+
+Assim, um simples código de pré-processamento de imagem, capaz de alterar o constraste, a saturação e o brilho da imagem. ja contribuiria para uma melhora consideravel da nitidez da imagem. Em primeiro momento, carregamos a imegem a ser editada para dentro do programa e atravéz da biblioteca ImageEnhance, modficamos cada um dos canais da imagem e salvamos a imagem editada.
 
 Exemplo prático:
 Temos uma imagem qualquer de um telefone com fundo verde, a mesma imagem modificada pelo código de processamento de imagem mencionado e novamente a mesma imagem transformada por um processamente de imagem profissional(https://letsenhance.io/boost) e a criação de suas respectivas mascaras binárias:
 
 ![telefonemascara](https://user-images.githubusercontent.com/109240286/179090507-5edf3458-26b8-4502-bdc7-c98e24e0be25.png)
+![telefoneeditadomascara](https://user-images.githubusercontent.com/109240286/179124273-0d250dc8-df78-4582-a26f-7c79a0485c18.png)
+![telefoneprocessadomascara](https://user-images.githubusercontent.com/109240286/179124287-5c131de5-ee46-432f-9d2b-c5ddf81bcfb5.png)
+
+A imagem editada pelo código de pré-processamento, apesar de simples já obteve melhores resultados nítidos na geração da mascara binária, contendo ainda alguma presença de pixels verdes não transformados nas fronteiras, mas certamente em menor quantidade quando comparada a imagem inalterada. Enquanto a imagem processada pelo editor online não possui sequer resquicios do fundo verde original da imagem.
+
