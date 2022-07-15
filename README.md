@@ -70,3 +70,8 @@ Exemplo:
 
 # Os efeitos de diferentes tipos de entrada
 
+![lava](https://user-images.githubusercontent.com/109240286/179271330-2ac68786-6b80-4445-a12d-cdb9ee0ca77a.gif)
+![paulosemcabeca](https://user-images.githubusercontent.com/109240286/179271358-9ae76593-8753-414a-9b02-5879a18f1ff4.gif)
+![pisachroma](https://user-images.githubusercontent.com/109240286/179271376-f93ac278-e63b-42d3-a156-23944115c6ac.png)
+![pisainverida](https://user-images.githubusercontent.com/109240286/179271386-8d638c6f-d5c1-4731-9932-1fe9a8d188ef.png)
+![pisamascara](https://user-images.githubusercontent.com/109240286/179271389-bdf68076-5042-4b5f-b518-1ed06490e78e.png)
