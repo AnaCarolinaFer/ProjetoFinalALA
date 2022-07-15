@@ -43,8 +43,8 @@ A imagem editada pelo código de pré-processamento, apesar de simples já obtev
 Assim, escolhendo um plano de fundo qualquer, temos a criação das respectivas mascaras invertidas:
 
 ![telefoneinvertido](https://user-images.githubusercontent.com/109240286/179125631-030efff7-ad85-44cd-aa99-c02c12ab1639.png)
-![telefoneeditadoinvertido](https://user-images.githubusercontent.com/109240286/179125628-9e415f5d-c02e-452d-b34b-be231dda34b1.png)
-![telefoneprocessadoinvertido](https://user-images.githubusercontent.com/109240286/179126112-75c8256f-bb8e-401e-9e80-d3650770407c.png)
+![telefoneeditadoinvertido](https://user-images.githubusercontent.com/109240286/179126112-75c8256f-bb8e-401e-9e80-d3650770407c.png)
+![telefoneeprocessadoinvertido](https://user-images.githubusercontent.com/109240286/179125628-9e415f5d-c02e-452d-b34b-be231dda34b1.png)
 
 Aqui, o impacto da diferença da qualidade das imagens torna-se clara.
 
