@@ -51,5 +51,5 @@ Aqui, o impacto da diferença da qualidade das imagens torna-se clara.
 Por fim, temos as imagens transformadas pelo chroma key:
 
 ![telefonetransformado](https://user-images.githubusercontent.com/109240286/179125961-7c74a66e-d7ea-4b97-b59e-261e463fe6a6.png)
-![telefoneeditadotransformado](https://user-images.githubusercontent.com/109240286/179125944-35c6eb48-4908-48c4-82e2-4c3cb46909ec.png)
-![telefoneprocessadotrsnformado](https://user-images.githubusercontent.com/109240286/179125958-abeaae33-b77d-4f01-b420-536b78213d7e.png)
+![telefoneeditadotrsnformado](https://user-images.githubusercontent.com/109240286/179125958-abeaae33-b77d-4f01-b420-536b78213d7e.png)
+<div><img src="https://user-images.githubusercontent.com/109240286/179125944-35c6eb48-4908-48c4-82e2-4c3cb46909ec.png" width="615px" /></div>
