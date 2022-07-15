@@ -41,12 +41,13 @@ A imagem editada pelo código de pré-processamento, apesar de simples já obtev
 
 Assim, escolhendo um plano de fundo qualquer, temos a criação das respectivas mascaras invertidas:
 
-![telefoneeditadoinvertido](https://user-images.githubusercontent.com/109240286/179125628-9e415f5d-c02e-452d-b34b-be231dda34b1.png)
 ![telefoneinvertido](https://user-images.githubusercontent.com/109240286/179125631-030efff7-ad85-44cd-aa99-c02c12ab1639.png)
-![fundotelefone](https://user-images.githubusercontent.com/109240286/179125633-449465a4-4435-41b1-bbcf-8a7329185f73.png)
+![telefoneeditadoinvertido](https://user-images.githubusercontent.com/109240286/179125628-9e415f5d-c02e-452d-b34b-be231dda34b1.png)
 
 Aqui, o impacto da diferença da qualidade das imagens torna-se clara.
 
 Por fim, temos as imagens transformadas pelo chroma key:
 
-
+![telefonetransformado](https://user-images.githubusercontent.com/109240286/179125961-7c74a66e-d7ea-4b97-b59e-261e463fe6a6.png)
+![telefoneeditadotransformado](https://user-images.githubusercontent.com/109240286/179125944-35c6eb48-4908-48c4-82e2-4c3cb46909ec.png)
+![telefoneprocessadotrsnformado](https://user-images.githubusercontent.com/109240286/179125958-abeaae33-b77d-4f01-b420-536b78213d7e.png)
