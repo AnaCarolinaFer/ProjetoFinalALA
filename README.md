@@ -76,3 +76,4 @@ Exemplo:
 ![pisainverida](https://user-images.githubusercontent.com/109240286/179271386-8d638c6f-d5c1-4731-9932-1fe9a8d188ef.png)
 ![pisamascara](https://user-images.githubusercontent.com/109240286/179271389-bdf68076-5042-4b5f-b518-1ed06490e78e.png)
 ![hp](https://user-images.githubusercontent.com/109240286/179272927-94e4eb09-3be9-43d2-a43d-fc72f5ce7fb5.gif)
+![bts](https://user-images.githubusercontent.com/109240286/179273957-7899fa7b-cca2-41a5-84f5-94427d2c4f7b.gif)
