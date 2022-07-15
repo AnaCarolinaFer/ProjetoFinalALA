@@ -9,18 +9,19 @@ composta por uma matriz, onde cada elemento da matriz em uma imagem é denominad
 # Código Chroma key para Imagens (feito em Julia)
 Em primeiro momento, carregamos a imagem, que possui o fundo ou o elemento verde a ser removido ou transformado, para dentro do programa. 
 
-
-
 Assim, seguimos para a etapa de identificação dos pixels verdes, através do espaço de cor HSV, cuja primeira coordenada representa a cor, a segunda a intensidade e a terceira o brilho na função máscara verde, estabelece-se uma faixa de tons verdes segura no sentido de não estar próxima das demais cores, diminuindo a chance do programa transformar espaços da imagem não desejados.  Dessa forma, convertemos inicialmente a imagem para o formato HSV e separamos os canais de cores que desejamos manipular, ou seja o tom da cor, a saturação e o brilho. Com isso, criamos uma matriz máscara de mesmo dimensão da matriz que representa a imagem trabalhada composta unicamente por 1. Então, verificamos cada posição dentro da matriz da imagem, se o valor estiver dentro da faixa de cor estabelecida, substituímos o 1 por 0 na posição. Desse modo, teremos ao final uma máscara binária, onde os zeros representam o espaço da imagem que não será transformado, não fará parte do chroma key. 
 
 Destarte, realizamos o produto entre a máscara binária produzida e a própria imagem, sendo assim nas posições da matriz da máscara, onde temos o valor 1, ao multiplicarmos pela imagem, passarão a ter o mesmo valor da matriz que representa a imagem naquela posição e onde temos o valor 0, haverá a perda de informação da imagem, ou seja permanecerá 0. 
 
-
+![pisamascara](https://user-images.githubusercontent.com/109240286/179271389-bdf68076-5042-4b5f-b518-1ed06490e78e.png)
 
 Por conseguinte, carregamos a imagem, denominada plano de fundo, que irá substituir os espaços verdes da imagem trabalhada e convertemos suas dimensões, a fim de estipular um padrão de tamanho de imagens trabalhadas, como exige a linguagem Julia. Em seguida, criamos uma matriz, chamada máscara invertida, inicialmente inicializada apenas por 1 e com as mesmas dimensões da máscara binária previamente produzida, e subtraímos pela própria máscara binária, gerando uma matriz inversa a máscara binária no sentido de onde uma contém 1 a outra contém 0 e vice-versa. Por fim, realizamos o produto entre a máscara inversa produzida e o plano de fundo, sendo assim nas posições da matriz da máscara inversa, onde temos o valor 1, ao multiplicarmos pelo plano de fundo, passarão a ter o mesmo valor da matriz que representa o plano de fundo naquela posição e onde temos o valor 0, haverá a perda de informação do plano de fundo, ou seja permanecerá 0. 
 
+![pisainverida](https://user-images.githubusercontent.com/109240286/179271386-8d638c6f-d5c1-4731-9932-1fe9a8d188ef.png)
+
 Finalmente, somamos os produtos entre a máscara binária produzida e a própria imagem e entre a máscara inversa e o plano de fundo, fazendo com que onde na matriz que representa a imagem trabalhada sem os espaços verdes estava armazenado o valor 0, obtenha o valor do pixel do plano de fundo na posição análoga, e vice-versa. Portanto, juntando as duas imagens, de forma que o plano de fundo substitua os espaços da imagem que originalmente eram verdes.
 
+![pisachroma](https://user-images.githubusercontent.com/109240286/179271376-f93ac278-e63b-42d3-a156-23944115c6ac.png)
 
 # Código de pré-processamento de imagem (feito em python)
 A falta de nitidez de uma imagem faz com que as divisas entres duas cores não sejam tão demarcadas, fazendo com que os pixels da fronteira tenham uma cor intermediária entre as duas, “se misturem”. Dessa forma, o programa acaba tendo dificuldade em determinar se os pixels da fronteira são verdes ou não, podendo eliminar partes da imagem durante a criação da máscara binária, que deveriam ser aproveitadas ou até mesmo incluir espaços da imagem que deveriam ser transformadas pelo chroma key. Por isso que para a utilização do chroma key, a etapa de processamento da imagem trabalhada é igualmente relevante. 
@@ -69,11 +70,24 @@ Exemplo:
 
 
 # Os efeitos de diferentes tipos de entrada
+- Saco de lixo verde
 
 ![lava](https://user-images.githubusercontent.com/109240286/179271330-2ac68786-6b80-4445-a12d-cdb9ee0ca77a.gif)
+
+Nos experimentos do código aplicado a videos contendo os sacos de lixo, é perceptível como a luz refletida pelos sacos nos objetos e superficies a sua volta faz com que o programa identifique-os como espaços verdes a serem transfomados. No caso do video com a lava, apesar dos sacos estarem somente no chão, o programa transformou pedaços da parede e dos movéis em lava também. 
+
 ![paulosemcabeca](https://user-images.githubusercontent.com/109240286/179271358-9ae76593-8753-414a-9b02-5879a18f1ff4.gif)
-![pisachroma](https://user-images.githubusercontent.com/109240286/179271376-f93ac278-e63b-42d3-a156-23944115c6ac.png)
-![pisainverida](https://user-images.githubusercontent.com/109240286/179271386-8d638c6f-d5c1-4731-9932-1fe9a8d188ef.png)
-![pisamascara](https://user-images.githubusercontent.com/109240286/179271389-bdf68076-5042-4b5f-b518-1ed06490e78e.png)
+
+Da mesma forma, o próprio saco, por não ser uma superficie plana, possui pontos de sombra, que não são identificados pelo programa como verde por serem mais p´roximos do preto. No caso do video acima, o saco não foi transformado por inteiro em alguns momentos do video.
+
 ![hp](https://user-images.githubusercontent.com/109240286/179272927-94e4eb09-3be9-43d2-a43d-fc72f5ce7fb5.gif)
+
+- Parede verde
 ![bts](https://user-images.githubusercontent.com/109240286/179273957-7899fa7b-cca2-41a5-84f5-94427d2c4f7b.gif)
+
+Em superficies lisas a execução do programa torna-se visivelmente mais limpa. 
+
+- Fundo verde digital
+
+
+
