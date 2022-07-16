@@ -72,22 +72,26 @@ Exemplo:
 # Os efeitos de diferentes tipos de entrada
 - Saco de lixo verde
 
+<div align="center" ><img src="https://user-images.githubusercontent.com/109240286/179371125-ca6da008-6a0d-401c-8278-7068bb885e57.gif" width="630px" /></div>
 <div align="center" ><img src="https://user-images.githubusercontent.com/109240286/179271330-2ac68786-6b80-4445-a12d-cdb9ee0ca77a.gif" width="630px" /></div>
 
 Nos experimentos do código aplicado a videos contendo os sacos de lixo, é perceptível como a luz refletida pelos sacos nos objetos e superficies a sua volta faz com que o programa identifique-os como espaços verdes a serem transfomados. No caso do video com a lava, apesar dos sacos estarem somente no chão, o programa transformou pedaços da parede e dos movéis em lava também. 
 
+<div align="center" ><img src="https://user-images.githubusercontent.com/109240286/179371120-890f0679-afb9-4c95-b0a6-f88c9a92d18a.gif" width="630px" /></div>
 <div align="center" ><img src="https://user-images.githubusercontent.com/109240286/179272927-94e4eb09-3be9-43d2-a43d-fc72f5ce7fb5.gif" width="630px" /></div>
 
 Da mesma forma, o próprio saco, por não ser uma superficie plana, possui pontos de sombra, que não são identificados pelo programa como verde por serem mais próximos do preto. No caso do video acima, o saco não foi transformado por inteiro em alguns momentos do video.
 
 - Parede verde
 
+<div align="center" ><img src="https://user-images.githubusercontent.com/109240286/179371114-daeb2aca-4dbb-40e6-92f6-e6f561576e45.gif" width="630px" /></div>
 <div align="center" ><img src="https://user-images.githubusercontent.com/109240286/179273957-7899fa7b-cca2-41a5-84f5-94427d2c4f7b.gif" width="630px" /></div>
 
 No caso da parede verde, apesar de não conter nenhum espaço verde não transformado devido principalemnte a sua superficie plana, é perceptível como a falta de qualidade do video dificulta uma transformação mais suave das imagens que compõem o video, como foi previamente mencionado. 
 
 - Fundo verde digital
 
+<div align="center" ><img src="https://user-images.githubusercontent.com/109240286/179371109-f4e379f5-e22b-4c4e-809d-b7b4a0e8aa1d.gif" width="630px" /></div>
 <div align="center" ><img src="https://user-images.githubusercontent.com/109240286/179370834-576c4a51-6405-4ade-92c6-0b30b51c1d31.gif" width="630px" /></div>
 
 Já em imagens digitais que possuem um plano reto, com unformidade de distribuição de cor e luz, e com maior nível de qualidade em relação a nitidez e contraste, a execução do programa torna-se visivelmente mais limpa.
