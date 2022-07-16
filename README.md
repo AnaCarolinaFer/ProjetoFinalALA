@@ -47,9 +47,9 @@ Aqui, o impacto da diferença da qualidade das imagens torna-se clara.
 
 Por fim, temos as imagens transformadas pelo chroma key:
 
-![telefonetransformado](https://user-images.githubusercontent.com/109240286/179125961-7c74a66e-d7ea-4b97-b59e-261e463fe6a6.png)
-![telefoneeditadotrsnformado](https://user-images.githubusercontent.com/109240286/179125958-abeaae33-b77d-4f01-b420-536b78213d7e.png)
-<div><img src="https://user-images.githubusercontent.com/109240286/179125944-35c6eb48-4908-48c4-82e2-4c3cb46909ec.png" width="615px" /></div>
+<div align="center" ><img src="https://user-images.githubusercontent.com/109240286/179125961-7c74a66e-d7ea-4b97-b59e-261e463fe6a6.png" width="615px" /></div>
+<div align="center" ><img src="https://user-images.githubusercontent.com/109240286/179125958-abeaae33-b77d-4f01-b420-536b78213d7e.png" width="615px" /></div>
+<div align="center" ><img src="https://user-images.githubusercontent.com/109240286/179125944-35c6eb48-4908-48c4-82e2-4c3cb46909ec.png" width="615px" /></div>
 
 
 # Vídeos
@@ -65,28 +65,27 @@ Por fim, para sermos capazes de criar uma animação utilizando as imagens trans
 
 Exemplo:
 
-![paulosemcabeca](https://user-images.githubusercontent.com/109240286/179131723-d6ceba99-07e5-44ab-818f-3fad4fdc46b5.gif)
-![paulosemcabecagif](https://user-images.githubusercontent.com/109240286/179131457-87932cd4-f4ba-4e1c-8d6c-a2c21cf792d1.gif)
+<div align="center" ><img src="https://user-images.githubusercontent.com/109240286/179131723-d6ceba99-07e5-44ab-818f-3fad4fdc46b5.gif" width="630px" /></div>
+<div align="center" ><img src="https://user-images.githubusercontent.com/109240286/179131457-87932cd4-f4ba-4e1c-8d6c-a2c21cf792d1.gif" width="630px" /></div>
 
 
 # Os efeitos de diferentes tipos de entrada
 - Saco de lixo verde
 
-![lava](https://user-images.githubusercontent.com/109240286/179271330-2ac68786-6b80-4445-a12d-cdb9ee0ca77a.gif)
+<div align="center" ><img src="https://user-images.githubusercontent.com/109240286/179271330-2ac68786-6b80-4445-a12d-cdb9ee0ca77a.gif" width="630px" /></div>
 
 Nos experimentos do código aplicado a videos contendo os sacos de lixo, é perceptível como a luz refletida pelos sacos nos objetos e superficies a sua volta faz com que o programa identifique-os como espaços verdes a serem transfomados. No caso do video com a lava, apesar dos sacos estarem somente no chão, o programa transformou pedaços da parede e dos movéis em lava também. 
 
-![hp](https://user-images.githubusercontent.com/109240286/179272927-94e4eb09-3be9-43d2-a43d-fc72f5ce7fb5.gif)
+<div align="center" ><img src="https://user-images.githubusercontent.com/109240286/179272927-94e4eb09-3be9-43d2-a43d-fc72f5ce7fb5.gif" width="630px" /></div>
 
 Da mesma forma, o próprio saco, por não ser uma superficie plana, possui pontos de sombra, que não são identificados pelo programa como verde por serem mais p´roximos do preto. No caso do video acima, o saco não foi transformado por inteiro em alguns momentos do video.
 
 - Parede verde
-- 
-![bts](https://user-images.githubusercontent.com/109240286/179273957-7899fa7b-cca2-41a5-84f5-94427d2c4f7b.gif)
 
-Em superficies lisas a execução do programa torna-se visivelmente mais limpa. 
+<div align="center" ><img src="https://user-images.githubusercontent.com/109240286/179273957-7899fa7b-cca2-41a5-84f5-94427d2c4f7b.gif" width="630px" /></div>
+
+Já em superficies lisas a execução do programa torna-se visivelmente mais limpa. 
 
 - Fundo verde digital
 
-
-
+<div align="center" ><img src="https://user-images.githubusercontent.com/109240286/179273957-7899fa7b-cca2-41a5-84f5-94427d2c4f7b.gif" width="630px" /></div>
