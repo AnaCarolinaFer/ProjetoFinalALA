@@ -78,14 +78,16 @@ Nos experimentos do código aplicado a videos contendo os sacos de lixo, é perc
 
 <div align="center" ><img src="https://user-images.githubusercontent.com/109240286/179272927-94e4eb09-3be9-43d2-a43d-fc72f5ce7fb5.gif" width="630px" /></div>
 
-Da mesma forma, o próprio saco, por não ser uma superficie plana, possui pontos de sombra, que não são identificados pelo programa como verde por serem mais p´roximos do preto. No caso do video acima, o saco não foi transformado por inteiro em alguns momentos do video.
+Da mesma forma, o próprio saco, por não ser uma superficie plana, possui pontos de sombra, que não são identificados pelo programa como verde por serem mais próximos do preto. No caso do video acima, o saco não foi transformado por inteiro em alguns momentos do video.
 
 - Parede verde
 
 <div align="center" ><img src="https://user-images.githubusercontent.com/109240286/179273957-7899fa7b-cca2-41a5-84f5-94427d2c4f7b.gif" width="630px" /></div>
 
-Já em superficies lisas a execução do programa torna-se visivelmente mais limpa. 
+No caso da parede verde, apesar de não conter nenhum espaço verde não transformado devido principalemnte a sua superficie plana, é perceptível como a falta de qualidade do video dificulta uma transformação mais suave das imagens que compõem o video, como foi previamente mencionado. 
 
 - Fundo verde digital
 
-<div align="center" ><img src="https://user-images.githubusercontent.com/109240286/179273957-7899fa7b-cca2-41a5-84f5-94427d2c4f7b.gif" width="630px" /></div>
+<div align="center" ><img src="https://user-images.githubusercontent.com/109240286/179370834-576c4a51-6405-4ade-92c6-0b30b51c1d31.gif" width="630px" /></div>
+
+Já em imagens digitais que possuem um plano reto, com unformidade de distribuição de cor e luz, e com maior nível de qualidade em relação a nitidez e contraste, a execução do programa torna-se visivelmente mais limpa.
