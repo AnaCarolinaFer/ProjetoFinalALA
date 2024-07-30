@@ -1,5 +1,3 @@
-# ProjetoFinalALA
-
 # Chroma key
 é uma técnica de efeito visual que consiste em colocar uma imagem sobre uma outra por meio do anulamento de uma cor padrão, como por exemplo o verde; é uma técnica de processamento de imagens cujo objetivo é eliminar o fundo de uma imagem para isolar os personagens ou objetos de interesse que posteriormente são combinados com uma outra imagem de fundo e é utilizado em vídeos em que se deseja substituir o fundo por algum outro vídeo ou foto.
 
